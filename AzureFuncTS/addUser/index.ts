@@ -1,5 +1,5 @@
 import { AzureFunction, Context, HttpRequest, HttpRequestParams } from "@azure/functions";
-import { addUser, users } from "../database/users";
+import { addUser } from "../database/users";
 import { successResponse, raiseError } from "../lib/utility";
 
 const httpTrigger: AzureFunction = async function (context: Context, req: HttpRequest): Promise<void> {
@@ -9,9 +9,6 @@ const httpTrigger: AzureFunction = async function (context: Context, req: HttpRe
     try {
         const insertedId: string | undefined = await addUser(payload);
 
-        console.log(users);
-        
-    
         successResponse(context, 'User added successfully!', { insertedId });
         return;
 
