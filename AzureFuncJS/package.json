@@ -1,0 +1,9 @@
+{
+  "name": "azure-func-js",
+  "version": "1.0.0",
+  "description": "Azure functions using JavaScript",
+  "scripts" : {
+    "start": "func start"
+  },
+  "author": "Ayan Kumar Saha"
+}
