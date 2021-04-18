@@ -39,6 +39,5 @@ const addUser = async (user): Promise<string> => {
 
 export {
     addUser,
-    findUser,
-    users,
+    findUser
 }

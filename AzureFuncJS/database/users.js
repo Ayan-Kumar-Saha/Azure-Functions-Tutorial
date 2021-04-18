@@ -1,16 +1,16 @@
 let users = [
     {
-        userId: '1',
+        userId: 'uId161867838088194',
         name: 'Chinmoy',
         email: 'cm@gmail.com'
     },
     {
-        userId: '2',
+        userId: 'uId161867841489156',
         name: 'Kamal',
         email: 'kr@gmail.com'
     },
     {
-        userId: '3',
+        userId: 'uId161867842560315',
         name: 'Subho',
         email: 'sc@gmail.com'
     }
@@ -37,6 +37,5 @@ const addUser = async (user) => {
 
 module.exports = {
     findUser,
-    addUser,
-    users
+    addUser
 }
